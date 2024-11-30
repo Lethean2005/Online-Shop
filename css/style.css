@@ -11,19 +11,126 @@ body {
 }
 /* header */
 header{
-    background-color: #333;
+    /* background-color: #333; */
     color: #fff;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     gap: 50px;
     padding: 20px;
     text-align: start;
 }
+/* search-bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #b0b0b0;
+    border-radius: 4px;
+    padding: 5px;
+    width: 450px;
+}
+.search-bar select {
+    border: none;
+    background-color: #b0b0b0;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-right: 1px solid #999;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+}
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #b0b0b0;
+    color: white;
+    outline: none;
+}
+.search-bar button {
+    background-color: #f0b400;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.search-bar button img {
+    width: 16px;
+    height: 16px;
+}
+/* end search -bar */
 header img{
     width: 100px;
     height: auto;
     border-radius: 50%;
 }
-form{
+/* logo navbar */
+.phone h4{
+    text-align: end;
+}
+.phone{
+    color: #333;
+}
+.contact{
     display: flex;
+    gap: 50px;
+}
+.contact img{
+    width: 50px;
+}
+/* end logo navbar */
+
+/* shop-category */
+.shop-category {
+    display: flex;
+    align-items: center;
+    background-color: #F0B400; /* Yellow background */
+    color: white;
+    padding: 10px 20px;
+    margin-left: 36px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    cursor: pointer;
+    position: relative;
+}
+
+.burger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.burger-icon div {
+    background-color: white;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+head select {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+    display: none; /* Hidden initially */
+}
+
+.shop-category:hover select {
+    display: block; /* Show on hover */
+    background-color: white;
+    color: black;
+    outline: none;
 }
