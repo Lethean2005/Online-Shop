@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
     font-family: Arial, sans-serif;
 }
 body {
@@ -72,12 +73,39 @@ header img{
 .phone{
     color: #333;
 }
-.contact{
+/* Contact Section */
+.contact {
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
-.contact img{
-    width: 50px;
+
+.contact ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.contact li {
+    display: flex;
+    align-items: center;
+}
+
+.contact img {
+    width: 25px;
+    margin-right: 8px; /* Space between image and text */
+}
+
+.contact a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: #ff0077;
 }
 /* end logo navbar */
 
@@ -88,31 +116,41 @@ header img{
     padding: 10px;
 }
 
-.shop-category {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-    margin-left: 30px;
-}
-
-.burger-icon div {
-    width: 25px;
-    height: 3px;
-    margin: 5px 0;
-    background-color: #333;
-}
-
 .shop-category-button {
     background-color: #ffb81c;
     color: white;
+    margin-left: 40px;
     padding: 10px 15px;
     border: none;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add space between the burger icon and the text */
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.shop-category-button:hover {
+    background-color: #f79c42;
+}
+
+/* Burger Icon inside the button */
+.burger-icon {
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger-icon div {
+    width: 100%;
+    height: 4px;
+    background-color: white;
 }
 .pages{
-    margin-left: 50px;
+    margin-left: 100px;
 }
 .pages ul {
     list-style: none;
