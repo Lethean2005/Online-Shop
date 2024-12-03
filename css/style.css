@@ -82,54 +82,63 @@ header img{
 /* end logo navbar */
 
 /* shop-category */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
 .shop-category {
     display: flex;
     align-items: center;
-    background-color: #F0B400; /* Yellow background */
-    color: white;
-    padding: 10px 20px;
-    margin-left: 36px;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    width: 250px;
-    cursor: pointer;
-    position: relative;
-}
-
-.burger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-left: 30px;
 }
 
 .burger-icon div {
-    background-color: white;
-    height: 4px;
-    width: 100%;
-    border-radius: 2px;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #333;
 }
 
-head select {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
+.shop-category-button {
+    background-color: #ffb81c;
+    color: white;
+    padding: 10px 15px;
     border: none;
-    border-top: 1px solid #ddd;
-    border-radius: 0 0 5px 5px;
-    display: none; /* Hidden initially */
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.pages{
+    margin-left: 50px;
+}
+.pages ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
 }
 
-.shop-category:hover select {
-    display: block; /* Show on hover */
-    background-color: white;
-    color: black;
-    outline: none;
+.pages li {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.pages li img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.pages li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pages li a:hover {
+    color: #ff0077;
 }
