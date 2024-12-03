@@ -83,11 +83,9 @@ header img{
 
 /* shop-category */
 .navbar {
-    background-color: #eef6f9;
     display: flex;
     align-items: center;
     padding: 10px;
-    border-bottom: 3px solid #ddd;
 }
 
 .shop-category {
@@ -113,7 +111,9 @@ header img{
     cursor: pointer;
     margin-left: 10px;
 }
-
+.pages{
+    margin-left: 50px;
+}
 .pages ul {
     list-style: none;
     padding: 0;
